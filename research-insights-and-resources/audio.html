@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+ <ModulePrefs title="ConsultCambridgeWebsite"
+              title_url="__UP_feedUrl__"
+  directory_title="ConsultCambridgeWebsite"
+              author="Helen Burdis" author_email="helen@comfyweb.net" height="900" width="100%"
+  description="This is a custom design website for ConsultCambridge, designed and created by Comfy Web. It is not for general use."
+              screenshot="https://sites.google.com/a/consultcambridge.com/images/home/Screenshot.png"
+              thumbnail="https://sites.google.com/a/consultcambridge.com/images/home/Thumbnail.png">
+  <Require feature="dynamic-height"/>
+  <Require feature="com.google.gadgets.analytics" />
+ </ModulePrefs>
+ <Content type="html"><![CDATA[
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio</title>
+        <link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/PageContentALLCSS.css" type="text/css" />
+  <meta name="viewport" content="width=device-width" />
+	<style type="text/css">
+	
+	#main-content
+	{
+	 font:12px arial;
+	}
+	#main-content img
+	{
+	 margin-left:10px;
+	 width:18%;
+	}
+	#research-list li
+	{
+	 color:#008080;
+	 font-weight:bold;
+	 font-size:16px;
+	}
+	#research-list li a
+	{
+	 text-decoration:none;
+	 color:#444444;
+	}
+	#research-list a:hover
+	{
+	 color:#008080;
+	}
+	#selected-insights
+	{
+	 Position:relative;
+	 margin-top:20px;
+	 z-index:95;
+	}
+	#selected-insights img
+	{
+	 padding:10px;
+	}
+	
+	#selected-insights h2
+	{
+	 color:#424242;
+	 font-weight:bold;
+	 font-size:18px;
+	}
+	#selected-insights h3
+	{
+	 color:#6E6E6E;
+	 font-weight:bold;
+	 font-size:15px;
+	}
+	#selected-insights h4
+	 {
+	   color:#008080;
+	   font-size:14px;
+	   font-weight:bold;
+	 }
+	#selected-insights p
+	{
+	 color#444444;
+	 font:normal 12px;
+	}
+	#copyright
+	{
+	margin-top:30px
+	}
+	</style>
+    </head>
+
+
+<body style="background-image: url(https://sites.google.com/a/consultcambridge.com/images/home/IMG_2102%201920x800.jpg); background-size: 1920px 628px; background-position:center 3%; background-repeat:no-repeat; background-color:#A4A4A4;">
+  <div id="whole-page">
+    <div class="whitebackgroundtop"><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhitebackgroundGreyGradientTop.png" />
+    <div>
+    <div id="topnav">
+			<ul class="dropmenu"> <!-------Begin Menu--------->
+			
+					<li><a href="http://www.consultcambridge.com/consulting-services" class="full_drop">Consulting Services</a> <!-----------------Begin Multi Drop Down -------------->
+						<div class="subdrop drop_column drop_common">
+							<ul class="drop_col_menu">
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/organisation-capability-and-architecture">Organisation Capability & Architecture</a></li>
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/business-transformation-design-delivery">Business Transformation Design & Delivery</a></li>
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/human-capital-solutions">Human Capital Solutions</a></li>
+							</ul>
+						</div> 
+					</li> <!-----------------End Multi Drop Down -------------->
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/expertise">Expertise</a></li>
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/about-consultcambridge">About</a>
+						<!-------------Begin 3 Column Submenu------------->
+						<div class="subdrop column_3 drop_common">
+							<div class="col_110">
+								<header class="col_110_head"><h3>ConsultCambridge:</h3></header>
+								<ul>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Pedigree</a></li>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Values</a></li>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Proposition</a></li>
+								</ul>
+							</div>
+							<div class="col_110">
+							<header class="col_110_head"><h3>Our People:</h3></header>
+								<ul>
+									<li><a href="http://www.consultcambridge.com/our-people">Director</a></li>
+									<li><a href="http://www.consultcambridge.com/our-people">Our Associates</a></li>
+									<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
+								</ul>
+							</div>
+						</div> 
+					</li> <!------End 3 Column Submenu-------->
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+	    <li><a href="http://www.consultcambridge.com/research-insights-and-resources">Research & Resources</a> <!-----------------------Begin 1 Column Submenu------------------------->
+		<div class="subdrop column_1 drop_common">	
+                    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Books & Journal Articles</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Books%20and%20Journals%20Menu%20circular%20Icon.png" alt="image1">
+			<p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to.....<a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Read More...</a></p>
+		    </div>
+                    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Audio</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon.png" alt="image2">
+			<p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express.....<a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Read More...</a></p>
+		    </div>
+		    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/video">Video</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Vodcast%20Icon.png" alt="image3">
+			<p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture...<a href="http://www.consultcambridge.com/research-insights-and-resources/video">Read More...</a></p>
+		    </div>
+		</div>
+					</li> <!-----------------------End 1 Column Submenu------------------------->
+			</ul>			<!-------------- End Menu-------------->
+		</div>
+    </div>
+    <div id="logo"><a href="http://www.consultcambridge.com"><img src="https://sites.google.com/a/consultcambridge.com/images/home/Logo_Largest_HBCreationTransparent.png" /></a></div>
+    <div id="margin-limit">
+    <div id="navigation-links">
+        <ul>
+            <li><a href="http://www.consultcambridge.com">Home</a></li>
+            <li>|</li>
+            <li><a href="http://www.consultcambridge.com/contact-us">Contact Us</a></li>
+        </ul>
+ </div>
+ </div>
+    </div>
+        <div class="whitebackgroundbottom">
+	<div id="main-content" style="background-image: url(https://sites.google.com/a/consultcambridge.com/images/home/WhiteBackGroundBottom%20907x2500.jpg)">
+            <h1>Audio</h1><br><br>
+	     <img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon.png" align="right" />
+	     <p>All podcasts are available for download via ITunesU and via The University of Cambridge Judge Business School website: <a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/">Podcasts</a></p>
+	      <div id="selected-insights">
+		<h2>Can Pay be Strategic?</h2>
+		<h3>Dr Jonathan Trevor, Cambridge Judge Business School</h3><br>
+		<h4>About this podcast</h4>
+		<p>In his new book Dr Jonathan Trevor, Co-Director of the Centre for International Human Resource Management at Cambridge Judge Business School, examines through case studies the global and local approaches to the management of pay.</p>
+		<br><p><a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/2011/2011_trevor_can.mp3">Play <i>Can Pay be Strategic?</i></a></p>
+		<br><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/BreakingWithTradition%20155x121.jpg" align="left" />
+		<h2>Breaking with tradition</h2>
+		<h3>Dr Jonathan Trevor, Cambridge Judge Business School</h3><br>
+		<h4>About this podcast</h4>
+		<p>Dr Jonathan Trevor argues that we will see a move away from large scale public sector organisations which are the providers of professional services to public services organisations which are the commissioners of professionals from the public, private and not for profit sector to provide these services. The question he asks is how do we ensure these public servants and organisations are best fit for purpose to deliver this agenda.</p><br>
+		<p><a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/2010/2010_trevor_breaking.mp3">Play <i>Breaking with tradition</i></a></p>
+		<br><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/HumanCapitalRisk%20155x121.jpg" align="right" />
+		<h2>Human capital risk</h2>
+		<h3>Dr Jonathan Trevor, Cambridge Judge Business School</h3><br>
+		<h4>About this podcast</h4>
+		<p>Not since the winter of discontent in 1979 has our economic and social well-being, societally and personally, been so dependent on how effectively people, as human capital, are managed. Ineffective HRM can inhibit organisational performance, destroy value and competitiveness; Dr Jonathan Trevor explains how the current financial crisis is an example of just such a human capital crisis.</p><br>
+		<p><a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/2009/2009_trevor_human.mp3">Play <i>Human capital risk</i></a></p>
+		<br><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/BuildingBridges%20155x121.jpg" align="left" />
+		<h2>Building bridges: what is best practice for structuring executive remuneration?</h2>
+		<h3>Dr Jonathan Trevor, Cambridge Judge Business School</h3><br>
+		<h4>About this podcast</h4>
+		<p>Is it shaped by social imperatives or should it be held as an economic negotiation? Dr Jonathan Trevor discusses this contentious issue, calling for an increase in transparency and more direct dialogue and consensus between shareholders and executives on what constitutes good governance as opposed to a reliance on using intermediary bodies: "We need to bridge the gap between the interests of shareholders and the interests of the executives. One size does not fit all and it is where we have seen prescriptive 'best practice' applied without contextual sensitivity, that we've seen the systems fail, with executives being incentivised for what amounts to bad behaviour with negative outcomes for the companies involved."</p><br>
+		<p><a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/2009/2009_trevor_building.mp3">Play <i>Building bridges: what is best practice for structuring executive remuneration?</i></a></p>
+		</div> 
+        <div id="copyright">
+			<p>Content &copy; 2012 Consult Cambridge. All Rights Reserved. Website designed and created by Comfy Web - <a href="http://www.comfyweb.net">www.comfyweb.net</a></p>
+		</div>
+	</div>
+ </div>
+ </div>
+<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+</body>
+</html>
+</Content>
+</Module>

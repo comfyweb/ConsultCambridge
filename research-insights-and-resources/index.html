@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+ <ModulePrefs title="ConsultCambridgeWebsite"
+              title_url="__UP_feedUrl__"
+  directory_title="ConsultCambridgeWebsite"
+              author="Helen Burdis" author_email="helen@comfyweb.net" height="900" width="100%"
+  description="This is a custom design website for ConsultCambridge, designed and created by Comfy Web. It is not for general use."
+              screenshot="https://sites.google.com/a/consultcambridge.com/images/home/Screenshot.png"
+              thumbnail="https://sites.google.com/a/consultcambridge.com/images/home/Thumbnail.png">
+  <Require feature="dynamic-height"/>
+  <Require feature="com.google.gadgets.analytics" />
+ </ModulePrefs>
+ <Content type="html"><![CDATA[
+<!DOCTYPE html>
+<head>
+	<title>Research Insights and Resources</title>
+        <link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/PageContentALLCSS.css" type="text/css" />
+	<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/ConServColSeleInsightsCSSONLY.css" type="text/css" />
+  <meta name="viewport" content="width=device-width" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+	<style>
+
+/* Cambridge green hex colour #008080 */
+/* Dark grey navigation colour #424242 */
+
+div.bgcarousel{ /* CSS for main carousel container */
+background: black url(ajaxload.gif) center center no-repeat; /* loading gif while caoursel is loading */
+width:97%; /* default dimensions of carousel */
+min-width:200px;
+max-width:1024px;
+height:260px;
+position:relative;
+left:0%;
+margin-top: 0px;
+padding-bottom:20px;
+}
+
+img.navbutton{ /* CSS for the nav buttons */
+margin:5px;
+opacity:0;
+}
+
+div.slide{ /* CSS for each image's DIV container within main container */
+background-color: black;
+background-position: center center; /* center image within carousel */
+background-repeat: no-repeat;
+background-size: cover; /* CSS3 property to scale image within container? "cover" or "contain" */
+color: black;
+}
+
+div.selectedslide{ /* CSS for currently selected slide */
+}
+
+div.slide div.desc{ /* DIV that contains the textual description inside .slide */
+position: absolute;
+color: #ffffff;
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(4, 180, 174) transparent;
+/* RGBa with 0.8 opacity */
+background: rgba(4, 180, 174, 0.8);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+left: 5%;
+top: 35%;
+width:60%;
+padding: 10px;
+font: 16px sans-serif, Arial;
+/* text-shadow: 0 -1px 1px #424242; CSS3 text shadow */
+z-index:5;
+
+/*** ROUNDED CORNERS ***/
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright:8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-radius: 0 8px 8px 8px; /* CSS3 */
+}
+
+div.selectedslide div.desc{ /* CSS for currently selected slide's desc div */
+}
+
+div.slide div.desc h2{
+font-size:26px;
+margin:0;
+}
+
+div.slide div.desc a{
+color:#ffffff;
+text-decoration:none;
+font:normal 18px arial;
+/* text-shadow: 0 -1px 1px #000000; CSS3 text shadow */
+}
+
+div.slide div.desc a:hover
+{
+	text-decoration: none;
+	color:#424242;
+	font:normal 18px arial;
+}
+
+</style>
+
+<script src="https://sites.google.com/a/consultcambridge.com/consultcambridge/bgcarousel.js" type="text/javascript">
+
+/***********************************************
+* Background Image Carousel- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+var firstbgcarousel=new bgCarousel({
+	wrapperid: 'mybgcarousel', //ID of blank DIV on page to house carousel
+	imagearray: [
+		['https://sites.google.com/a/consultcambridge.com/images/home/Chess%20Board%20Distance%20700x260.jpg', '<h2>Can Pay be Strategic?</h2>A fresh perspective grounded in robust theory and relevant empirical research <a href="http://www.consultcambridge.com/research-insight-and-resources/books-and-journal-articles"><i>more...</i></a>'], //["image_path", "optional description"]
+		['https://sites.google.com/a/consultcambridge.com/images/home/Information%20Age%20Keyboard%20700x260.jpg', '<h2>Leadership fit for the information age</h2>Knowledge-intensive networks of highly connected and autonomous talent <a href="http://www.consultcambridge.com/research-insight-and-resources/books-and-journal-articles"><i>more...</i></a>'],
+                ['https://sites.google.com/a/consultcambridge.com/images/home/Globe%20Blurred%20BlackandWhite%20700x260.jpg', '<h2>Six principles of effective global talent management</h2>Building and sustaining a strong talent pipeline <a href="http://www.consultcambridge.com/research-insight-and-resources/books-and-journal-articles"><i>more...</i></a>'],
+		['https://sites.google.com/a/consultcambridge.com/images/home/Engine%20Parts%20700x260.jpg', '<h2>The human resource department:</h2>roles, coordination and influence <a href="http://www.consultcambridge.com/research-insight-and-resources/books-and-journal-articles"><i>more...</i></a>'] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:5000, cycles:3, stoponclick:false, pauseonmouseover:true},
+	navbuttons: ['https://sites.google.com/a/consultcambridge.com/images/home/LeftnavTransparent.png', 'https://sites.google.com/a/consultcambridge.com/images/home/RightnavTransparent.png'], // path to nav images
+	activeslideclass: 'selectedslide', // CSS class that gets added to currently shown DIV slide
+	orientation: 'h', //Valid values: "h" or "v"
+	persist: true, //remember last viewed slide and recall within same session?
+	slideduration: 700 //transition duration (milliseconds)
+})
+
+</script>
+<style type="text/css">
+
+#RImain-content
+    {
+        font: 14px Arial;
+        position:relative;
+        padding-left:-50px;
+	margin-top: -2788px;
+        width: 975px;
+        margin-left:30px;
+    }
+#RImain-content h1
+    {
+	color: #008080;
+    }
+	 /* Start of Column CSS */
+#three-columns
+{
+	position: relative;
+	margin-top:2%;
+}
+#three-columns h2
+{
+	font-size:14px;
+	text-align: center;
+}
+#colcon3 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:26%;
+}
+#colcon2 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:25%;
+}
+#colcon1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:25%;
+	margin-left: -5%;
+}
+#column1 {
+	float:left;
+	width:30%;
+	position:relative;
+	left:81%;
+	overflow:hidden;
+	padding-right:20;
+}
+#column1 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#column1 a:hover
+{
+	color:#008080;
+}
+#column2 {
+	float:left;
+	width:30%;
+	position:relative;
+	left:83%;
+	overflow:hidden;
+	padding-right: 20;
+}
+#column2 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#column2 a:hover
+{
+	color:#008080;
+}
+#column3 {
+	float:left;
+	width:30%;
+	position:relative;
+	left:85%;
+	overflow:hidden;
+}
+#column3 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#column3 a:hover
+{
+	color:#008080;
+}
+#consulting-services img
+{
+	width:15%;
+}
+#navigation-links ul
+    {
+        margin-left:780px;
+	width:240px;
+        padding;10px;
+        position: absolute;
+        margin-top: -45px;
+    }
+#copyright
+{
+margin-top:1220px
+}
+</style>
+</head>
+
+
+<body style="background-image: url(https://sites.google.com/a/consultcambridge.com/images/home/IMG_2072%201920x800.jpg); background-size: 1920px 628px; background-position:center 3%; background-repeat:no-repeat; background-color:#A4A4A4;">
+  <div id="whole-page">
+    <div class="whitebackgroundtop"><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhitebackgroundGreyGradientTop.png" />
+    <div>
+    <div id="topnav">
+			<ul class="dropmenu"> <!-------Begin Menu--------->
+			
+					<li><a href="http://www.consultcambridge.com/consulting-services" class="full_drop">Consulting Services</a> <!-----------------Begin Multi Drop Down -------------->
+						<div class="subdrop drop_column drop_common">
+							<ul class="drop_col_menu">
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/organisation-capability-and-architecture">Organisation Capability & Architecture</a></li>
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/business-transformation-design-delivery">Business Transformation Design & Delivery</a></li>
+								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/human-capital-solutions">Human Capital Solutions</a></li>
+							</ul>
+						</div> 
+					</li> <!-----------------End Multi Drop Down -------------->
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/expertise">Expertise</a></li>
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+					
+					<li><a href="http://www.consultcambridge.com/about-consultcambridge">About</a>
+						<!-------------Begin 3 Column Submenu------------->
+						<div class="subdrop column_3 drop_common">
+							<div class="col_110">
+								<header class="col_110_head"><h3>ConsultCambridge:</h3></header>
+								<ul>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Pedigree</a></li>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Values</a></li>
+									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Proposition</a></li>
+								</ul>
+							</div>
+							<div class="col_110">
+							<header class="col_110_head"><h3>Our People:</h3></header>
+								<ul>
+									<li><a href="http://www.consultcambridge.com/our-people">Director</a></li>
+									<li><a href="http://www.consultcambridge.com/our-people">Our Associates</a></li>
+									<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
+								</ul>
+							</div>
+						</div> 
+					</li> <!------End 3 Column Submenu-------->
+					<li style="font-size: 18px; color:#E6E6E6">|</li>
+	    <li><a href="http://www.consultcambridge.com/research-insights-and-resources">Research & Resources</a> <!-----------------------Begin 1 Column Submenu------------------------->
+		<div class="subdrop column_1 drop_common">	
+                    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Books & Journal Articles</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Books%20and%20Journals%20Menu%20circular%20Icon.png" alt="image1">
+			<p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to.....<a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Read More...</a></p>
+		    </div>
+                    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Audio</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon.png" alt="image2">
+			<p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express.....<a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Read More...</a></p>
+		    </div>
+		    <div class="col_350">
+			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/video">Video</a></h3></header>
+			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Vodcast%20Icon.png" alt="image3">
+			<p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture...<a href="http://www.consultcambridge.com/research-insights-and-resources/video">Read More...</a></p>
+		    </div>
+		</div>
+					</li> <!-----------------------End 1 Column Submenu------------------------->
+			</ul>			<!-------------- End Menu-------------->
+		</div>
+    </div>
+    <div id="logo"><a href="http://www.consultcambridge.com"><img src="https://sites.google.com/a/consultcambridge.com/images/home/Logo_Largest_HBCreationTransparent.png" /></a></div>
+    <div id="margin-limit">
+    <div id="navigation-links">
+        <ul>
+            <li><a href="http://www.consultcambridge.com">Home</a></li>
+            <li>|</li>
+            <li><a href="http://www.consultcambridge.com/contact-us">Contact Us</a></li>
+        </ul>
+ </div>
+ </div>
+    </div>
+	<div class="whitebackgroundbottom"><center><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhiteBackGroundBottom%20907x2500.jpg" /></div></center>
+	<div id="RImain-content">
+            <h1>Research Insights and Resources</h1><br>
+	    <center><div id="mybgcarousel" class="bgcarousel"></div></center>
+	    <br>
+            <div id="three-columns">
+	    <div id="colcon3">
+                <div id="colcon2">
+                    <div id="colcon1">
+                        <div id="column1">
+			<!-- Column one start -->
+                            <h2><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Books and Journal Articles</a></h2><br>
+			    <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/Books%20and%20Journals%20Menu%20circular%20Icon%20143x140.png" width="106" height="105"/></center><br>
+			    <br><p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to...<i><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">read more</a></i></p>
+			<!-- Column one end -->
+			</div>
+			<div id="column2">
+			<!-- Column two start -->
+                            <h2><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Audio</a></h2><br>
+			    <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon%20142x140.png" width="105" height="105" /></center><br>
+                            <br><p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express... <i><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">read more</a></i><p>
+			<!-- Column two end -->
+			</div>
+			<div id="column3">
+			<!-- Column three start -->
+                            <h2><a href="http://www.consultcambridge.com/research-insights-and-resources/video">Video</a></h2><br>
+			    <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/Vodcast%20Icon.png" width="105" height="98" /></center><br>
+			    <br><p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture... <i><a href="http://www.consultcambridge.com/cresearch-insights-and-resources/video">read more</a></i></p><br><br>
+			<!-- Column three end -->
+			</div>
+		    </div>
+		</div>
+            </div>
+	</div>
+        </div>
+	<div id="SImain-content">
+	  <div id="SIcontainer2">
+	    <div id="SIcontainer1">
+		<div id="SIcol1">
+		  <div id="consulting-services">
+			<!-- Column one start -->
+			<h1>Selected Insights:</h1><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/Can%20Pay%20be%20Strategic%2090x140.jpg" align="left" />
+		<p><h2><i>Can Pay be Strategic? </i></h2><br>provides a timely insight into the challenges faced by leading organizations when attempting to deploy pay systems in the pursuit of strategic priorities. Based upon in-depth case study research, this book reveals a number of managerial obstacles to the effective management of contemporary pay systems and the dysfunctionalities and negative outcomes that are an organizational reality for many.<br><br>
+		Difficult to get right and easy to get wrong, are attempts to use pay strategically worth it? To this on-going and critical debate in the field, Jonathan Trevor offers for both academics and practitioners a fresh perspective grounded in robust theory and relevant empirical research.</p>
+		<br><h3>Trevor, J. (2011) <font color="#610B0B"><i>Can pay be strategic? A critical exploration of strategic pay in practice.</i></font> London: Palgrave Macmillan. <a href="http://www.palgrave.com/products/title.aspx?pid=324754" target="_blank">http://www.palgrave.com/products/title.aspx?pid=324754</a></h3>
+		<p><a href="http://www.amazon.co.uk/Can-Pay-Be-Strategic-Exploration/dp/0230223540" target="_blank"><img src="https://sites.google.com/a/consultcambridge.com/images/home/Amazon%20Button.png" /></a></p>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/Leadership%20Fit%20for%20the%20Intormation%20Age.png" align="right" /><br>
+		<h2><i>Leadership fit for the information age</i></h2><br>
+		<p>Organizations need to let go of previously held notions of leadership in order to embrace a new leadership concept and strategy more suited to today's environment. Future organizations will necessarily rely upon knowledge-intensive networks of highly connected and autonomous talent, empowered to rapidly converge on singular intersections of common interest without guidance from above. Such co-ordination will not be achieved through centralized command and control, but through network leadership – in effect, self-direction in the interests of a common purpose and guided by shared values.</p>
+		<br><h3>Trevor, J. and Kilduff, M. (2012) <font color="#610B0B">"Leadership fit for the information age" </font><i>Strategic HR Review</i>, 11(3): 150-155</h3>
+		<br><img src="https://sites.google.com/a/consultcambridge.com/images/home/MITSloan%20120x155.jpg" align="left" />
+		<h1><i>Six principles of effective global talent management</i></h1><br>
+		<p>One of the biggest challenges facing companies all over the world is building and sustaining a strong talent pipeline. Not only do businesses need to adjust to shifting demographics and work force preferences, but they must also build new capabilities and revitalize their organizations — all while investing in new technologies, globalizing their operations and contending with new competitors. What do companies operating in numerous markets need to do to attract and develop the very best employees so they can be competitive globally? To learn how leading multinational companies are facing up to the talent test, we examined both qualitative and quantitative data at leading companies from a wide range of industries all over the world.</p>
+		<br><h3>Stahl, G.K., Björkman, I., Farndale, E., Morris, S.S., Paauwe, J., Stiles, P., Trevor, J. and Wright, P. (2012) "Six principles of effective global talent management." <i>MIT Sloan Management Review</i>, 53(2): 25-32</h3>
+		<br><img src="https://sites.google.com/a/consultcambridge.com/images/home/The%20Human%20Resource%20Department%20120x179.jpg" align="right" />
+		<h1><i>The human resource department: roles, coordination and influence</i></h1>
+		<br>
+		<h3>Stiles, P. and Trevor, J. (2006) "The human resource department: roles, coordination and influence." In Stahl, G.K. and Bjorkman, I. (eds.): Handbook of research in international human resource management. Cheltenham and Northampton, MA: Edward Elgar Publishing Ltd, pp.49-67</h3>
+			<!-- Column one end -->
+		</div>
+		</div>
+		<div id="SIcol2">
+		 <div id="selected-insights">
+			<!-- Column two start -->
+			<h1>Selected Pod & VodCasts:</h1>
+		<br><h2>The Complexity Challenge</h2><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/The%20Complexity%20Challenge%2090x90.jpg" align="left"/>
+		<span style="font-size:11px; color: #424242"><p>Dr Trevor talks to Abhik Sen, Managing Editor of the Economist Intelligence Unit (EIU), about the recent <i>The Complexity Challenge</i> report investigating the rise of complexity in business and the challenges that increasing complexity creates.</p>
+		<br><p><a href="http://www.managementthinking.eiu.com/complexity-challenge.html?quicktabs_content=multimedia" target="_blank">http://www.managementthinking.eiu.com/complexity-challenge.html?quicktabs_content<br>=multimedia</a></p></span>
+		<br><h2>Breaking With Tradition</h2><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/Breaking%20With%20Tradition%20Video%20136x73.png" align="left"/>
+		<span style="font-size:11px; color: #424242"><p>Dr Jonathan Trevor argues that we will see a move away from large scale public sector organisations which are the providers of professional services to public services organisations which are the commissioners of professionals from the public, private and not for profit sector to provide these services. The question he asks is how do we ensure these public servants and organisations are best fit for purpose to deliver this agenda.</p>
+		<br><p><a href="http://www.youtube.com/watch?v=uYeJGZMRT5o" target="_blank">http://www.youtube.com/watch?v=uYeJGZMRT5o</a></p></span>
+		<br><h2>Leadership, Vision, Cynicism and Social Issues</h2><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/Leadership%2C%20Vision%2C%20Cynicism%20and%20Social%20Issues%2090x110.jpg" align="left"/>
+		<span style="font-size:11px; color: #424242"><p>Leadership plays a huge part in the transformation and visioning of the future organisation but cynicism is a major barrier in that process; and, as the operating environment becomes increasingly uncertain, vision is becoming more important than planning.</p>
+		<br><p><a href="http://www.jbs.cam.ac.uk/interactive/expert_comment/2012/trevor_tojeiro_vision.html">http://www.jbs.cam.ac.uk/interactive/expert_<br>comment/2012/trevor_tojeiro_vision.html</a></p></span><br><br>
+		<h2>Human Capital Risk</h2><br>
+		<img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon%20Small.png" align="left" />
+		<span style="font-size:11px; color: #424242"><p>Not since the winter of discontent in 1979 has our economic and social well-being, societally and personally, been so dependent on how effectively people, as human capital, are managed. Ineffective HRM can inhibit organisational performance, destroy value and competitiveness; Dr Jonathan Trevor explains how the current financial crisis is an example of just such a human capital crisis</p>
+		<br><p><a href="http://www.jbs.cam.ac.uk/interactive/expert_comment/2012/trevor_tojeiro_vision.html" target="_blank">http://www.jbs.cam.ac.uk/interactive/expert_comment/2012/trevor_tojeiro_vision.html</a></p>
+			<!-- Column two end -->
+		</div>
+		</div>
+	</div> 
+ </div>
+		<div id="copyright">
+			<p>Content &copy; 2012 Consult Cambridge. All Rights Reserved. Website designed and created by Comfy Web - <a href="http://www.comfyweb.net">www.comfyweb.net</a></p>
+		</div>
+ </div>
+ </div>
+</body>
+</html>
+ </Content>
+</Module>
