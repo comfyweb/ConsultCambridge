@@ -1,260 +1,466 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Module>
- <ModulePrefs title="ConsultCambridgeWebsite"
-              title_url="__UP_feedUrl__"
-  directory_title="ConsultCambridgeWebsite"
-              author="Helen Burdis" author_email="helen@comfyweb.net" height="900" width="100%"
-  description="This is a custom design website for ConsultCambridge, designed and created by Comfy Web. It is not for general use."
-              screenshot="https://sites.google.com/a/consultcambridge.com/images/home/Screenshot.png"
-              thumbnail="https://sites.google.com/a/consultcambridge.com/images/home/Thumbnail.png">
-  <Require feature="dynamic-height"/>
-  <Require feature="com.google.gadgets.analytics" />
- </ModulePrefs>
- <Content type="html"><![CDATA[
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>ConServ Human Capital Solutions</title>
-        <link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/PageContentALLCSS.css" type="text/css" />
-	<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/ConServColSeleInsightsCSSONLY.css" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>ConServ Organisational Capital and Architecture</title>
+  <link rel="stylesheet" href="../css/PageContentALLCSS.css" type=
+  "text/css" />
+  <link rel="stylesheet" href=
+  "../css/ConServColSeleInsightsCSSONLY.css" type="text/css" />
   <meta name="viewport" content="width=device-width" />
-    <style type="text/css">
+  <style type="text/css">
+/*<![CDATA[*/
     #SImain-content
     {
-        margin-top: -2828px;
+        margin-top: -2844px;
         width:990px;
         margin-left:-5px;
         font-size: 14px;
     }
-    	/* Start of Column CSS */
-#SIcontainer2 {
-	clear:left;
-	float:left;
-	width:157%;
-	overflow:hidden;
-}
-#SIcontainer1 {
-	float:left;
-	width:93%;
-	position:relative;
-	right:50%;
-}
-#SIcol1 {
-	float:left;
-	width:45%;
-	position:relative;
-	left:54%;
-	overflow:hidden;
-}
-#SIcol1 h1 {
-	color:#008080;
-}
-#SIcol1 h2 {
-	color:#008080;
-}
-#SIcol1 h3 {
-	color:#424242;
-	font-size:12px;
-}
-#SIcol1 img {
-	padding-right:10px;
-	padding-left:10px;
-}
-#SIcol1 a {
-	color:#0000FF;
-	font-weight:normal;
-}
-#SIcol2 {
-	float:left;
-	width:21%;
-	position:relative;
-	left:55%;
-	overflow:hidden;
-}
-#SIcol2 h1 {
-	color:#008080;
-}
-#SIcol2 h2 {
-	color:#008080;
-}
-#SIcol2 img {
-	padding-right:10px;
-}
-#SIcol2 a {
-	color:#0000FF;
-}
-/* --> */
-#consulting-services h1 {
+        /* Start of Column CSS */
+  #SIcontainer2 {
+        clear:left;
+        float:left;
+        width:157%;
+        overflow:hidden;
+  }
+  #SIcontainer1 {
+        float:left;
+        width:93%;
+        position:relative;
+        right:50%;
+  }
+  #SIcol1 {
+        float:left;
+        width:45%;
+        position:relative;
+        left:54%;
+        overflow:hidden;
+  }
+  #SIcol1 h1 {
+        color:#008080;
+  }
+  #SIcol1 h2 {
+        color:#008080;
+  }
+  #SIcol1 h3 {
+        color:#424242;
+        font-size:12px;
+  }
+  #SIcol1 img {
+        padding-right:10px;
+        padding-left:10px;
+  }
+  #SIcol1 a {
+        color:#0000FF;
+        font-weight:normal;
+  }
+  #SIcol2 {
+        float:left;
+        width:21%;
+        position:relative;
+        left:55%;
+        overflow:hidden;
+  }
+  #SIcol2 h1 {
+        color:#008080;
+  }
+  #SIcol2 h2 {
+        color:#008080;
+  }
+  #SIcol2 img {
+        padding-right:10px;
+  }
+  #SIcol2 a {
+        color:#0000FF;
+  }
+  /* --> */
+  #consulting-services h1 {
         color:#008080;
         font-size: 16px;
         font-weight:bold;
-}
-#parahead {
+  }
+  #parahead {
         color:#008080;
         font-size: 16px;
         font-weight:bold;
-}
-#consulting-services img {
+  }
+  #consulting-services img {
         width:60%;
-}
-#selected-insights p {
-	color:#424242;
-	font-size:11px;
-}
-#selected-insights h3 {
-	font-size:12px;
-}
-#selected-insights h4 {
-	color:#424242;
-	font-size:11px;
-}
-#selected-insights img {
-	width:32%
-}
-#link {
+  }
+  #selected-insights p {
+        color:#424242;
+        font-size:11px;
+  }
+  #selected-insights h3 {
+        font-size:12px;
+  }
+  #selected-insights h4 {
+        color:#424242;
+        font-size:11px;
+  }
+  #selected-insights img {
+        width:40%
+  }
+  #link {
         font-size:9px;
-}
-#copyright
-{
-margin-top:1220px
-}
- </style>	
-	
-    </head>
+  }
+  #copyright
+  {
+        margin-top:960px
+  }
+  /*]]>*/
+  </style>
+</head>
 
+<body style=
+"background-image: url(../images/IMG_2087%201920x800.jpg); background-size: 1920px 628px; background-position:center 3%; background-repeat:no-repeat; background-color:#A4A4A4;">
+<div id="whole-page">
+    <div class="whitebackgroundtop">
+      <img src="../images/WhitebackgroundGreyGradientTop.png" />
 
-<body style="background-image: url(https://sites.google.com/a/consultcambridge.com/images/home/IMG_2030%201920x800.jpg); background-size: 1920px 628px; background-position:center 3%; background-repeat:no-repeat; background-color:#A4A4A4;">
-  <div id="whole-page">
-    <div class="whitebackgroundtop"><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhitebackgroundGreyGradientTop.png" />
-    <div>
-    <div id="topnav">
-			<ul class="dropmenu"> <!-------Begin Menu--------->
-			
-					<li><a href="http://www.consultcambridge.com/consulting-services" class="full_drop">Consulting Services</a> <!-----------------Begin Multi Drop Down -------------->
-						<div class="subdrop drop_column drop_common">
-							<ul class="drop_col_menu">
-								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/organisation-capability-and-architecture">Organisation Capability & Architecture</a></li>
-								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/business-transformation-design-delivery">Business Transformation Design & Delivery</a></li>
-								<li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/human-capital-solutions">Human Capital Solutions</a></li>
-							</ul>
-						</div> 
-					</li> <!-----------------End Multi Drop Down -------------->
-					<li style="font-size: 18px; color:#E6E6E6">|</li>
-					
-					<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
-					<li style="font-size: 18px; color:#E6E6E6">|</li>
-					
-					<li><a href="http://www.consultcambridge.com/expertise">Expertise</a></li>
-					<li style="font-size: 18px; color:#E6E6E6">|</li>
-					
-					<li><a href="http://www.consultcambridge.com/about-consultcambridge">About</a>
-						<!-------------Begin 3 Column Submenu------------->
-						<div class="subdrop column_3 drop_common">
-							<div class="col_110">
-								<header class="col_110_head"><h3>ConsultCambridge:</h3></header>
-								<ul>
-									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Pedigree</a></li>
-									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Values</a></li>
-									<li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Proposition</a></li>
-								</ul>
-							</div>
-							<div class="col_110">
-							<header class="col_110_head"><h3>Our People:</h3></header>
-								<ul>
-									<li><a href="http://www.consultcambridge.com/our-people">Director</a></li>
-									<li><a href="http://www.consultcambridge.com/our-people">Our Associates</a></li>
-									<li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
-								</ul>
-							</div>
-						</div> 
-					</li> <!------End 3 Column Submenu-------->
-					<li style="font-size: 18px; color:#E6E6E6">|</li>
-	    <li><a href="http://www.consultcambridge.com/research-insights-and-resources">Research & Resources</a> <!-----------------------Begin 1 Column Submenu------------------------->
-		<div class="subdrop column_1 drop_common">	
-                    <div class="col_350">
-			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Books & Journal Articles</a></h3></header>
-			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Books%20and%20Journals%20Menu%20circular%20Icon.png" alt="image1">
-			<p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to.....<a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Read More...</a></p>
-		    </div>
-                    <div class="col_350">
-			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Audio</a></h3></header>
-			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon.png" alt="image2">
-			<p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express.....<a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Read More...</a></p>
-		    </div>
-		    <div class="col_350">
-			<header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/video">Video</a></h3></header>
-			<img src="https://sites.google.com/a/consultcambridge.com/images/home/Vodcast%20Icon.png" alt="image3">
-			<p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture...<a href="http://www.consultcambridge.com/research-insights-and-resources/video">Read More...</a></p>
-		    </div>
-		</div>
-					</li> <!-----------------------End 1 Column Submenu------------------------->
-			</ul>			<!-------------- End Menu-------------->
-		</div>
-    </div>
-    <div id="logo"><a href="http://www.consultcambridge.com"><img src="https://sites.google.com/a/consultcambridge.com/images/home/Logo_Largest_HBCreationTransparent.png" /></a></div>
-    <div id="margin-limit">
-    <div id="navigation-links">
-        <ul>
-            <li><a href="http://www.consultcambridge.com">Home</a></li>
+      <div>
+        <div id="topnav">
+          <ul class="dropmenu">
+            <!-- Begin Menu -->
+
+            <li>
+              <a href="../consulting-services/index.html" class=
+              "full_drop">Consulting Services</a> 
+              <!-- Begin Multi Drop Down -->
+
+              <div class="subdrop drop_column drop_common">
+                <ul class="drop_col_menu">
+                  <li class="nested_drop"><a href=
+                  "../consulting-services/organisation-capability-and-architecture.html">
+                  Organisation Capability &amp;
+                  Architecture</a></li>
+
+                  <li class="nested_drop"><a href=
+                  "../consulting-services/business-transformation-design-delivery.html">
+                  Business Transformation Design &amp;
+                  Delivery</a></li>
+
+                  <li class="nested_drop"><a href=
+                  "../consulting-services/human-capital-solutions.html">
+                  Human Capital Solutions</a></li>
+                </ul>
+              </div>
+            </li><!-- End Multi Drop Down -->
+
+            <li style="font-size: 18px; color:#E6E6E6">|</li>
+
+            <li><a href="../clients/index.html">Clients</a></li>
+
+            <li style="font-size: 18px; color:#E6E6E6">|</li>
+
+            <li><a href=
+            "../expertise/index.html">Expertise</a></li>
+
+            <li style="font-size: 18px; color:#E6E6E6">|</li>
+
+            <li>
+              <a href=
+              "../about-consultcambridge/index.html">About</a> 
+              <!-- Begin 3 Column Submenu -->
+
+              <div class="subdrop column_3 drop_common">
+                <div class="col_110">
+                  <header class="col_110_head">
+                    <h3>ConsultCambridge:</h3>
+                  </header>
+
+                  <ul>
+                    <li><a href=
+                    "../about-consultcambridge/index.html">Our
+                    Pedigree</a></li>
+
+                    <li><a href=
+                    "../about-consultcambridge/index.html">Our
+                    Values</a></li>
+
+                    <li><a href=
+                    "../about-consultcambridge/index.html">Our
+                    Proposition</a></li>
+                  </ul>
+                </div>
+
+                <div class="col_110">
+                  <header class="col_110_head">
+                    <h3>Our People:</h3>
+                  </header>
+
+                  <ul>
+                    <li><a href=
+                    "../our-people/index.html">Director</a></li>
+
+                    <li><a href="../our-people/index.html">Our
+                    Associates</a></li>
+
+                    <li><a href=
+                    "../clients/index.html">Clients</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li><!-- End 3 Column Submenu -->
+
+            <li style="font-size: 18px; color:#E6E6E6">|</li>
+
+            <li>
+              <a href=
+              "../research-insights-and-resources/index.html">Research
+              &amp; Resources</a> <!-- Begin 1 Column Submenu -->
+
+              <div class="subdrop column_1 drop_common">
+                <div class="col_350">
+                  <header class="col_350_head">
+                    <h3><a href=
+                    "../research-insights-and-resources/books-and-journal-articles.html">
+                    Books &amp; Journal Articles</a></h3>
+                  </header><img src=
+                  "../images/Books%20and%20Journals%20Menu%20circular%20Icon.png"
+                  alt="image1" />
+
+                  <p>We believe it is as important to contribute
+                  academically as it is to contribute personally,
+                  therefore, we continue to.....<a href=
+                  "../research-insights-and-resources/books-and-journal-articles.html">Read
+                  More...</a></p>
+                </div>
+
+                <div class="col_350">
+                  <header class="col_350_head">
+                    <h3><a href=
+                    "../research-insights-and-resources/audio.html">
+                    Audio</a></h3>
+                  </header><img src="../images/Podcast%20Icon.png"
+                  alt="image2" />
+
+                  <p>Discussions act as a catalyst for further
+                  ideas and inititives, we have been involved in
+                  many interviews to express.....<a href=
+                  "../research-insights-and-resources/audio.html">Read
+                  More...</a></p>
+                </div>
+
+                <div class="col_350">
+                  <header class="col_350_head">
+                    <h3><a href=
+                    "../research-insights-and-resources/video.html">
+                    Video</a></h3>
+                  </header><img src="../images/Vodcast%20Icon.png"
+                  alt="image3" />
+
+                  <p>In an economically challenging time, we need
+                  to ensure companies maximise their productivity
+                  whilst minimising their expediture...<a href=
+                  "../research-insights-and-resources/video.html">Read
+                  More...</a></p>
+                </div>
+              </div>
+            </li><!-- End 1 Column Submenu -->
+          </ul><!-- End Menu -->
+        </div>
+      </div>
+
+      <div id="logo">
+        <a href="../index.html"><img src=
+        "../images/Logo_Largest_HBCreationTransparent.png" /></a>
+      </div>
+
+      <div id="margin-limit">
+        <div id="navigation-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+
             <li>|</li>
-            <li><a href="http://www.consultcambridge.com/contact-us">Contact Us</a></li>
-        </ul>
- </div>
- </div>
+
+            <li><a href="../contact-us/index.html">Contact
+            Us</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-        <div class="whitebackgroundbottom"><center><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhiteBackGroundBottom%20907x2500.jpg" /></center>
-	<div id="SImain-content">
-	  <div id="SIcontainer2">
-	    <div id="SIcontainer1">
-		<div id="SIcol1">
-		  <div id="consulting-services">
-			<!-- Column one start -->
-			<h1>Human Capital Solutions</h1>
-		 <br><br><p>ConsultCambridge provides a range of innovative human capital solutions relating to human capital planning, management and innovations in aspects of talent management, workforce planning and employment relationships. We work with HR teams and business unit heads to address issues around talent selection, development, segmentation, succession, performance management and reward. 
-		 <br><br>A key focus is the development of strategy aligned HR outcomes and systems that are embedded in a clear business framework. We further support HR teams to develop functional excellence and build capability for HR led transformation.</p>
-		 <br><center><img src="https://sites.google.com/a/consultcambridge.com/images/home/HumanCapSolImage%20Transparent%20448x275.png" /></center><br><br>
-		 <ul>
-		 <li><span id="parahead">Human Capital Planning: </span>we develop robust and explicit linkages between strategic capability requirements and human capital investments. Strategically valuable roles are segmented and skills, competencies, behaviours and contribution, modelled to match organisational priorities. The outcome is a robust human capital architecture, identification of critical roles and the development of compelling propositions to key talent segments.</li><br><br>
-		 <li><span id="parahead">Designing Best In Class HR Systems: </span>we design multi-level HR systems emphasising vertical integration between HR practices and strategic outcomes, and horizontal integration between complementary HR processes. The result is a strong HR system, aligned to both strategic and employee need, and an end to end logic that encompasses the HR system approach, design and implementation.</li><br><br>
-		 <li><span id="parahead">HR Function Excellence: </span>we work with HR teams to ground their role in a clear business need, enhance functional capabilities and maximise their impact as a leader of organisation wide transformation. Behavioural and technical expertise is developed through facilitation and leadership education to ensure value added contribution. We seek to transfer knowledge to promote best in class people, relationships, networks, culture and leadership practice.</li>
-		 </ul>
-			<!-- Column one end -->
-		  </div>
-		</div>
-		<div id="SIcol2">
-		 <div id="selected-insights">
-			<!-- Column two start -->
-			<h1>Selected Insights:</h1><br><br>
-	    <img src="https://sites.google.com/a/consultcambridge.com/images/home/Can%20Pay%20be%20Strategic%2090x140.jpg" align="left"/><h2>Can Pay be Strategic?</h2>
-	    <br><h3>Dr Jonathan Trevor</h3>
-	    <p>This book provides a timely insight into the challenges faced by leading organizations when attempting to deploy pay systems in the pursuit of strategic priorities. Based upon in-depth case study research, this book reveals a number of managerial obstacles to the effective management of contemporary pay systems and the dysfunctionalities and negative outcomes that are an organizational reality for many.</p>
-	    <br><p>Difficult to get right and easy to get wrong, are attempts to use pay strategically worth it? To this on-going and critical debate in the field, Jonathan Trevor offers for both academics and practitioners a fresh perspective grounded in robust theory and relevant empirical research.</p>
-	    <br><h4>Trevor, J. (2011) <font color="#610B0B"><i>Can pay be strategic? A critical exploration of strategic pay in practice.</i></font> London: Palgrave Macmillan.</h4>
-	    <br><p><a href="http://www.palgrave.com/products/title.aspx?pid=324754" target="_blank">http://www.palgrave.com/products/title.aspx?pid=324754</a></p>
-	    <p><a href="http://www.amazon.co.uk/Can-Pay-Be-Strategic-Exploration/dp/0230223540" target="_blank">http://www.amazon.co.uk/Can-Pay-Be-Strategic-Exploration/dp/0230223540</a></p>
-	    <br>
-	    <img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon%20Small.png" align="left" /><h2>Podcast:</h2>
-	    <p><a href="http://www.cihrm.jbs.cam.ac.uk/leadership/podcasts/2011/2011_trevor_can.mp3" target="_blank">http://www.cihrm.jbs.<br>cam.ac.uk/leadership/<br>podcasts/2011/2011_trevor_can.mp3</a></p>
-	    <br><br><br>
-	    <img src="https://sites.google.com/a/consultcambridge.com/images/home/MITSloan%2090x116.jpg" align="left"/><h2>Six principles of effective global talent management</h2>
-	    <br><p>One of the biggest challenges facing companies all over the world is building and sustaining a strong talent pipeline. Not only do businesses need to adjust to shifting demographics and work force preferences, but they must also build new capabilities and revitalize their organizations — all while investing in new technologies, globalizing their operations and contending with new competitors. What do companies operating in numerous markets need to do to attract and develop the very best employees so they can be competitive globally? To learn how leading multinational companies are facing up to the talent test, we examined both qualitative and quantitative data at leading companies from a wide range of industries all over the world.</p>
-	    <br><h4>Stahl, G.K., Björkman, I., Farndale, E., Morris, S.S., Paauwe, J., Stiles, P., Trevor, J. and Wright, P. (2012) "Six principles of effective global talent management." <i>MIT Sloan Management Review</i>, 53(2): 25-32</h4>
-	    <br><br><img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon%20Small.png" align="left" /><h2>Human Capital Risk</h2>
-	    <br><h3>Dr Jonathan Trevor</h3>
-	    <h3>Cambridge Judge Business School</h3>
-	    <p>Not since the winter of discontent in 1979 has our economic and social well-being, societally and personally, been so dependent on how effectively people, as human capital, are managed. Ineffective HRM can inhibit organisational performance, destroy value and competitiveness; Dr Jonathan Trevor explains how the current financial crisis is an example of just such a human capital crisis</p>
-	    <br><p><a href="http://www.jbs.cam.ac.uk/interactive/expert_comment/2012/trevor_tojeiro_vision.html" target="_blank">http://www.jbs.cam.ac.uk/interactive/expert_comment/2012/trevor_tojeiro_vision.html</a></p>
-			<!-- Column two end -->
- </div>
-		</div>
-	</div>
- </div>
- <div id="copyright">
-			<p>Content &copy; 2012 Consult Cambridge. All Rights Reserved. Website designed and created by Comfy Web - <a href="http://www.comfyweb.net">www.comfyweb.net</a></p>
-		</div>
- </div>
- </div>
+
+    <div class="whitebackgroundbottom">
+      <center>
+        <img src=
+        "../images/WhiteBackGroundBottom%20907x2500.jpg" />
+      </center>
+
+      <div id="SImain-content">
+        <div id="SIcontainer2">
+          <div id="SIcontainer1">
+            <div id="SIcol1">
+              <div id="../consulting-services/index.html">
+                <br />
+
+                <h1>Organisational Capability and
+                Architecture</h1><br />
+
+                <p>ConsultCambridge helps top teams to create a
+                robust vision of their future capable organisation.
+                Through structured facilitation, rigorous analysis
+                and research derived frameworks, we establish
+                concrete strategic and organisational priorities
+                and identify current and future organisational
+                capability requirements.<br />
+                <br />
+                We further enable organization wide engagement and
+                creative input to identify organisational design
+                options and craft a fir for purpose organisational
+                architecture for long term and sustainable value
+                creation.</p><br />
+
+                <p>The focus of our integrated and customized
+                services encompass:</p><br />
+                <br />
+
+                <center>
+                  <img src=
+                  "../images/OrgCapandArchImage%20Transparent%20448x318.png" />
+                </center><br />
+                <br />
+
+                <ul>
+                  <li><span id="parahead">Articulating strategy and
+                  organisation linkages:</span> our focus is on
+                  addressing key strategic and organisational
+                  priorities and translating them into key inputs
+                  to the capability and architecture
+                  decision-making process. We combine industry
+                  insights with clinical case studies from peer
+                  organisations to best map the strategic and
+                  organisation needs in the short, medium and long
+                  term.</li>
+
+                  <li style="list-style: none"><br />
+                  <br /></li>
+
+                  <li><span id="parahead">Visioning the future
+                  state organisation:</span> we bring a robust
+                  analytical focus to assessing future state
+                  organisational requirement in respect of
+                  capabilities and resource investments. We work
+                  with top teams to understand in depth the product
+                  or service offering relative market opportunity
+                  and challenge and the implications for the
+                  organisational shape, structure and
+                  behaviour.</li>
+
+                  <li style="list-style: none"><br />
+                  <br /></li>
+
+                  <li><span id="parahead">Formulating the fit for
+                  purpose organisational architecture:</span> in
+                  line with the vision of the future state, we
+                  engage widely throughout the organisation to
+                  formulate a best fit for purpose organisational
+                  architecture through which long term sustainable
+                  value might be realised.</li>
+
+                  <li style="list-style: none"><br />
+                  <br /></li>
+
+                  <li><span id="parahead">Prioritising strategic
+                  resource investments:</span> We help clients
+                  prioritise resource investments in line with
+                  strategic and organisational priorities. Our
+                  approach is consider the variety of resources
+                  available and select those, human, social and
+                  organisational capitals, which yield the
+                  organisational capability necessary for strategic
+                  advantage.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="SIcol2">
+              <div id="selected-insights">
+                <br />
+
+                <h1>Selected Insights:</h1><br />
+                <br />
+                <img src=
+                "../images/The%20Complexity%20Challenge%2090x90.jpg"
+                align="left" />
+
+                <h2>The Complexity Challenge</h2><br />
+
+                <h3>Dr Jonathan Trevor</h3>
+
+                <h3>Cambridge Judge Business School</h3><br />
+
+                <p>Dr Trevor talks to Abhik Sen, Managing Editor of
+                the Economist Intelligence Unit (EIU), about the
+                recent <i>The Complexity Challenge</i> report
+                investigating the rise of complexity in business
+                and the challenges that increasing complexity
+                creates.</p><br />
+
+                <p id="link"><a href=
+                "http://www.managementthinking.eiu.com/complexity-challenge.html?quicktabs_content=multimedia"
+                target=
+                "_blank">http://www.managementthinking.eiu.com/complexity-challenge.html?quicktabs_content=multimedia</a></p><br />
+
+                <br />
+                <img src=
+                "../images/Breaking%20With%20Tradition%20Video%20136x73.png?attredirects=0"
+                align="left" />
+
+                <h2>Breaking With Tradition</h2>
+
+                <h3>Dr Jonathan Trevor</h3>
+
+                <h3>Cambridge Judge Business School</h3><br />
+
+                <p>Dr Jonathan Trevor argues that we will see a
+                move away from large scale public sector
+                organisations which are the providers of
+                professional services to public services
+                organisations which are the commissioners of
+                professionals from the public, private and not for
+                profit sector to provide these services. The
+                question he asks is how do we ensure these public
+                servants and organisations are best fit for purpose
+                to deliver this agenda.</p><br />
+
+                <p id="link"><a href=
+                "http://www.youtube.com/watch?v=uYeJGZMRT5o"
+                target="_blank">http://www.youtube.com/watch?v=uYeJGZMRT5o</a></p><br />
+
+                <br />
+                <img src=
+                "../images/Leadership%2C%20Vision%2C%20Cynicism%20and%20Social%20Issues%2090x110.jpg"
+                align="left" />
+
+                <h2>Leadership, Vision, Cynicism and Social
+                Issues</h2><br />
+
+                <h3>Dr Jonathan Trevor and Kate Tojeiro</h3><br />
+
+                <p>Leadership plays a huge part in the
+                transformation and visioning of the future
+                organisation but cynicism is a major barrier in
+                that process; and, as the operating environment
+                becomes increasingly uncertain, vision is becoming
+                more important than planning.</p><br />
+
+                <p id="link"><a href=
+                "http://www.youtube.com/watch?v=feVsy_g9CsU&amp;list=PLD6D207FE2040C190&amp;index=3&amp;feature=plpp_video"
+                target=
+                "_blank">http://www.youtube.com/watch?v=feVsy_g9CsU&amp;list=PLD6D207FE2040C190&amp;index=3&amp;feature=plpp_video</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="copyright">
+          <p>Content &#169; 2012 Consult Cambridge. All Rights
+          Reserved. Website designed and created by Comfy Web -
+          <a href=
+          "http://www.comfyweb.net">www.comfyweb.net</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-</Content>
-</Module>

@@ -1,32 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Module>
- <ModulePrefs title="ConsultCambridgeWebsite"
-              title_url="__UP_feedUrl__"
-  directory_title="ConsultCambridgeWebsite"
-              author="Helen Burdis" author_email="helen@comfyweb.net" height="900" width="100%"
-  description="This is a custom design website for ConsultCambridge, designed and created by Comfy Web. It is not for general use."
-              screenshot="https://sites.google.com/a/consultcambridge.com/images/home/Screenshot.png"
-              thumbnail="https://sites.google.com/a/consultcambridge.com/images/home/Thumbnail.png">
-  <Require feature="dynamic-height"/>
-  <Require feature="com.google.gadgets.analytics" />
- </ModulePrefs>
- <Content type="html"><![CDATA[
+<?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-  <!-- Force IE9 to IE8 compatibility mode -->
-  <meta http-equiv="X-UA-Compatible" content="IE=8" />
-  <!-- Force IE9 to IE7 compatibility mode -->
-  <meta http-equiv="X-UA-Compatible" content="IE=7" />
-  <title>CC Home Page</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-</head>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
-<style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Force IE9 to IE8 compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+<!-- Force IE9 to IE7 compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>CC Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <style>
 
 /* Cambridge green hex colour #008080 */
 /* Dark grey navigation colour #424242 */
@@ -110,29 +95,27 @@ div.slide div.desc a:hover
 }
 
 </style>
-
-<script src="https://sites.google.com/a/consultcambridge.com/consultcambridge/bgcarousel.js" type="text/javascript">
+  <script src="js/bgcarousel.js" type="text/javascript">
 
 /***********************************************
-* Background Image Carousel- © Dynamic Drive (www.dynamicdrive.com)
+* Background Image Carousel- Dynamic Drive (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit http://www.dynamicdrive.com/ for this script and 100s more.
 ***********************************************/
 
 </script>
-
-<script type="text/javascript">
+  <script type="text/javascript">
 
 var firstbgcarousel=new bgCarousel({
   wrapperid: 'mybgcarousel', //ID of blank DIV on page to house carousel
   imagearray: [
-    ['https://sites.google.com/a/consultcambridge.com/images/home/DSC00478%201920x800.jpg', '<h2>Leading Ideas</h2>ConsultCambridge brings together leading academics and practitioners for distinctive thought leadership in the fields of strategy, organization and human capital. <a href="http://www.consultcambridge.com/research-insight-and-resources"><i>more...</i></a>'], //["image_path", "optional description"]
-    ['https://sites.google.com/a/consultcambridge.com/images/home/HighImpact.jpg', '<h2>High Impact</h2>ConsultCambridge has partnered with clients internationally across all sectors to transform their organizations to become fit for purpose and future capable. <a href="http://www.consultcambridge.com/clients"><i>more...</i></a>'],
-                ['https://sites.google.com/a/consultcambridge.com/images/home/IMG_2093%201920x800.jpg', '<h2>Expert Insight</h2>We sit at the heart of multiple networks of deep knowledge and expertise, providing versatile expertise to address the core challenges our clients face. <a href="http://www.consultcambridge.com/expertise"><i>more...</i></a>'],
-    ['https://sites.google.com/a/consultcambridge.com/images/home/IMG_1998%201920x800.jpg', '<h2>Always Innovating</h2>Each opportunity to partner with a new client is a new opportunity to learn.  There is no such thing as one size fits.  Each client is unique and solutions are entirely bespoke to client needs for long term sustainable success. <a href="http://consultcambridge.com/consulting-services"><i>more...</i></a>'] //<--no trailing comma after very last image element!
+    ['images/DSC00478%201920x800.jpg', '<h2>Leading Ideas</h2>ConsultCambridge brings together leading academics and practitioners for distinctive thought leadership in the fields of strategy, organization and human capital. <a href="research-insight-and-resources/index.html"><i>more...</i></a>'], //["image_path", "optional description"]
+    ['images/HighImpact.jpg', '<h2>High Impact</h2>ConsultCambridge has partnered with clients internationally across all sectors to transform their organizations to become fit for purpose and future capable. <a href="clients/index.html"><i>more...</i></a>'],
+                ['images/IMG_2093%201920x800.jpg', '<h2>Expert Insight</h2>We sit at the heart of multiple networks of deep knowledge and expertise, providing versatile expertise to address the core challenges our clients face. <a href="expertise/index.html"><i>more...</i></a>'],
+    ['images/IMG_1998%201920x800.jpg', '<h2>Always Innovating</h2>Each opportunity to partner with a new client is a new opportunity to learn.  There is no such thing as one size fits.  Each client is unique and solutions are entirely bespoke to client needs for long term sustainable success. <a href="consulting-services/index.html"><i>more...</i></a>'] // no trailing comma after very last image element!
   ],
   displaymode: {type:'auto', pause:5000, cycles:3, stoponclick:false, pauseonmouseover:false},
-  navbuttons: ['https://sites.google.com/a/consultcambridge.com/images/home/LeftnavTransparent.png', 'https://sites.google.com/a/consultcambridge.com/images/home/RightnavTransparent.png'], // path to nav images
+  navbuttons: ['images/LeftnavTransparent.png', 'images/RightnavTransparent.png'], // path to nav images
   activeslideclass: 'selectedslide', // CSS class that gets added to currently shown DIV slide
   orientation: 'h', //Valid values: "h" or "v"
   persist: true, //remember last viewed slide and recall within same session?
@@ -140,8 +123,7 @@ var firstbgcarousel=new bgCarousel({
 })
 
 </script>
-
-<style type=text/css>
+  <style type="text/css">
 
  a img {border: none; }
  
@@ -233,8 +215,8 @@ html
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/stylesheetHeydings.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/stylesheetgandhisans.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="css/stylesheetHeydings.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="css/stylesheetgandhisans.css" type="text/css" charset="utf-8" />
 
 .lt-ie9 .dropmenu {
 background:#2a2a2a;
@@ -297,7 +279,7 @@ margin:0;
 padding:0;
 float:left;
 padding:0;
-background: url(https://sites.google.com/a/consultcambridge.com/images/home/IEFIXBackgroundImage.gif);
+background: url(images/IEFIXBackgroundImage.gif);
 }
 
 .dropmenu > li {
@@ -659,132 +641,210 @@ margin-top:350px
 }
 
 </style>
-
-<body>
-<div id="whole-page">
-    <div class="whitebackgroundtop"><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhitebackgroundGreyGradientTop.png" />
-    <div>
-    <div id="topnav">
-      <ul class="dropmenu"> <!-------Begin Menu--------->
-      
-          <li><a href="http://www.consultcambridge.com/consulting-services" class="full_drop">Consulting Services</a> <!-----------------Begin Multi Drop Down -------------->
-            <div class="subdrop drop_column drop_common">
-              <ul class="drop_col_menu">
-                <li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/organisation-capability-and-architecture">Organisation Capability & Architecture</a></li>
-                <li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/business-transformation-design-delivery">Business Transformation Design & Delivery</a></li>
-                <li class="nested_drop"><a href="http://www.consultcambridge.com/consulting-services/human-capital-solutions">Human Capital Solutions</a></li>
-              </ul>
-            </div> 
-          </li> <!-----------------End Multi Drop Down -------------->
-          <li style="font-size: 18px; color:#E6E6E6">|</li>
-          
-          <li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
-          <li style="font-size: 18px; color:#E6E6E6">|</li>
-          
-          <li><a href="http://www.consultcambridge.com/expertise">Expertise</a></li>
-          <li style="font-size: 18px; color:#E6E6E6">|</li>
-          
-          <li><a href="http://www.consultcambridge.com/about-consultcambridge">About</a>
-            <!-------------Begin 3 Column Submenu------------->
-            <div class="subdrop column_3 drop_common">
-              <div class="col_110">
-                <header class="col_110_head"><h3>ConsultCambridge:</h3></header>
-                <ul>
-                  <li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Pedigree</a></li>
-                  <li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Values</a></li>
-                  <li><a href="http://www.consultcambridge.com/about-consultcambridge">Our Proposition</a></li>
-                </ul>
-              </div>
-              <div class="col_110">
-              <header class="col_110_head"><h3>Our People:</h3></header>
-                <ul>
-                  <li><a href="http://www.consultcambridge.com/our-people">Director</a></li>
-                  <li><a href="http://www.consultcambridge.com/our-people">Our Associates</a></li>
-                  <li><a href="http://www.consultcambridge.com/clients">Clients</a></li>
-                </ul>
-              </div>
-            </div> 
-          </li> <!------End 3 Column Submenu-------->
-          <li style="font-size: 18px; color:#E6E6E6">|</li>
-      <li><a href="http://www.consultcambridge.com/research-insights-and-resources">Research & Resources</a> <!-----------------------Begin 1 Column Submenu------------------------->
-    <div class="subdrop column_1 drop_common">  
-                    <div class="col_350">
-      <header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Books & Journal Articles</a></h3></header>
-      <img src="https://sites.google.com/a/consultcambridge.com/images/home/Books%20and%20Journals%20Menu%20circular%20Icon.png" alt="image1">
-      <p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to.....<a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Read More...</a></p>
-        </div>
-                    <div class="col_350">
-      <header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Audio</a></h3></header>
-      <img src="https://sites.google.com/a/consultcambridge.com/images/home/Podcast%20Icon.png" alt="image2">
-      <p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express.....<a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Read More...</a></p>
-        </div>
-        <div class="col_350">
-      <header class="col_350_head"><h3><a href="http://www.consultcambridge.com/research-insights-and-resources/video">Video</a></h3></header>
-      <img src="https://sites.google.com/a/consultcambridge.com/images/home/Vodcast%20Icon.png" alt="image3">
-      <p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture...<a href="http://www.consultcambridge.com/research-insights-and-resources/video">Read More...</a></p>
-        </div>
-    </div>
-          </li> <!-----------------------End 1 Column Submenu------------------------->
-      </ul>      <!-------------- End Menu-------------->
-    </div>
-    </div>
-    <div id="logo"><a href="http://www.consultcambridge.com"><img src="https://sites.google.com/a/consultcambridge.com/images/home/Logo_Largest_HBCreationTransparent.png" /></a></div>
-    <div id="margin-limit">
-    <div id="navigation-links">
-        <ul>
-            <li><a href="http://www.consultcambridge.com">Home</a></li>
-            <li>|</li>
-            <li><a href="http://www.consultcambridge.com/contact-us">Contact Us</a></li>
-        </ul>
- </div>
- </div>
-    </div>
-    <center><div id="mybgcarousel" class="bgcarousel"></div></center>
-    <div class="whitebackgroundbottom"><center><img src="https://sites.google.com/a/consultcambridge.com/images/home/WhiteBackGroundBottom.png" /></center>
-  <div id="featuredcolumns">
-  <div id="container4">
-    <div id="container3">
-      <div id="container2">
-        <div id="container1">
-          <div id="col1">
-            <!-- Column one start -->
-            <h2 align="center"><a href="http://www.consultcambridge.com/research-insights-and-resources/books-and-journal-articles">Publications</a></h2><br>
-            <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/Publications%20Icon%20HomePage%20155x96.png" /></center>
-            <p><br>The director of ConsultCambridge has written and contributed to many books, articles and interviews. These highlight the extent of insight and vision ConsultCambridge brings to the industry.</p>
-            <!-- Column one end -->
+  </head>
+  <body>
+    <div id="whole-page">
+      <div class="whitebackgroundtop">
+        <img src="images/WhitebackgroundGreyGradientTop.png" />
+        <div>
+          <div id="topnav">
+            <ul class="dropmenu">
+<!-- Begin Menu -->
+              <li>
+                <a href="index.html" class="full_drop">Consulting Services</a>
+<!-- Begin Multi Drop Down -->
+                <div class="subdrop drop_column drop_common">
+                  <ul class="drop_col_menu">
+                    <li class="nested_drop">
+                      <a href="consulting-services/organisational-capability-and-architecture.html">Organisation Capability &amp; Architecture</a>
+                    </li>
+                    <li class="nested_drop">
+                      <a href="consulting-services/business-transformation-design-delivery.html">Business Transformation Design &amp; Delivery</a>
+                    </li>
+                    <li class="nested_drop">
+                      <a href="consulting-services/human-capital-solutions.html">Human Capital Solutions</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+<!-- End Multi Drop Down -->
+              <li style="font-size: 18px; color:#E6E6E6">|</li>
+              <li>
+                <a href="clients/index.html">Clients</a>
+              </li>
+              <li style="font-size: 18px; color:#E6E6E6">|</li>
+              <li>
+                <a href="expertise/index.html">Expertise</a>
+              </li>
+              <li style="font-size: 18px; color:#E6E6E6">|</li>
+              <li>
+                <a href="about-consultcambridge/index.html">About</a>
+<!-- Begin 3 Column Submenu -->
+                <div class="subdrop column_3 drop_common">
+                  <div class="col_110">
+                    <header class="col_110_head">
+                      <h3>ConsultCambridge:</h3>
+                    </header>
+                    <ul>
+                      <li>
+                        <a href="about-consultcambridge/index.html">Our Pedigree</a>
+                      </li>
+                      <li>
+                        <a href="about-consultcambridge/index.html">Our Values</a>
+                      </li>
+                      <li>
+                        <a href="about-consultcambridge/index.html">Our Proposition</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col_110">
+                    <header class="col_110_head">
+                      <h3>Our People:</h3>
+                    </header>
+                    <ul>
+                      <li>
+                        <a href="our-people/index.html">Director</a>
+                      </li>
+                      <li>
+                        <a href="our-people/index.html">Our Associates</a>
+                      </li>
+                      <li>
+                        <a href="clients/index.html">Clients</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+<!-- End 3 Column Submenu -->
+              <li style="font-size: 18px; color:#E6E6E6">|</li>
+              <li>
+                <a href="research-insights-and-resources/index.html">Research &amp; Resources</a>
+<!-- Begin 1 Column Submenu -->
+                <div class="subdrop column_1 drop_common">
+                  <div class="col_350">
+                    <header class="col_350_head">
+                      <h3>
+                        <a href="research-insights-and-resources/books-and-journal-articles.html">Books &amp; Journal Articles</a>
+                      </h3>
+                    </header>
+                    <img src="images/Books%20and%20Journals%20Menu%20circular%20Icon.png" alt="image1" />
+                    <p>We believe it is as important to contribute academically as it is to contribute personally, therefore, we continue to.....<a href="research-insights-and-resources/books-and-journal-articles.html">Read More...</a></p>
+                  </div>
+                  <div class="col_350">
+                    <header class="col_350_head">
+                      <h3>
+                        <a href="research-insights-and-resources/audio.html">Audio</a>
+                      </h3>
+                    </header>
+                    <img src="images/Podcast%20Icon.png" alt="image2" />
+                    <p>Discussions act as a catalyst for further ideas and inititives, we have been involved in many interviews to express.....<a href="research-insights-and-resources/audio.html">Read More...</a></p>
+                  </div>
+                  <div class="col_350">
+                    <header class="col_350_head">
+                      <h3>
+                        <a href="research-insights-and-resources/video.html">Video</a>
+                      </h3>
+                    </header>
+                    <img src="images/Vodcast%20Icon.png" alt="image3" />
+                    <p>In an economically challenging time, we need to ensure companies maximise their productivity whilst minimising their expediture...<a href="research-insights-and-resources/video.html">Read More...</a></p>
+                  </div>
+                </div>
+              </li>
+<!-- End 1 Column Submenu -->
+            </ul>
+<!-- End Menu -->
           </div>
-          <div id="col2">
-            <!-- Column two start -->
-            <h2 align="center"><a href="http://www.consultcambridge.com/research-insights-and-resources/audio">Latest Pod and Vodcasts</a></h2><br>
-            <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/VodPodCast%20HomePage%20Icon%20155x96.png" /></center
-            <p><br>Keep up to date with our latest podcasts and vodcasts. Each one provides different insights into topical areas.<p>
-            <!-- Column two end -->
+        </div>
+        <div id="logo">
+          <a href="index.html">
+            <img src="images/Logo_Largest_HBCreationTransparent.png" />
+          </a>
+        </div>
+        <div id="margin-limit">
+          <div id="navigation-links">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="contact-us/index.html">Contact Us</a>
+              </li>
+            </ul>
           </div>
-          <div id="col3">
-            <!-- Column three start -->
-            <h2 align="center"><a href="http://www.consultcambridge.com/research-insights-and-resources">Our Expertise</a></h2><br>
-            <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/HumanCapSolImage%20Icon%20155x95.png"/></center>
-            <p><br>ConsultCambridge is actively engaged with academic research programmes in varying relevant fields which directly informs our expertise and related services to our clients.  </p>
-            <!-- Column three end -->
-          </div>
-          <div id="col4">
-            <!-- Column four start -->
-            <h2 align="center"><a href="http://www.consultcambridge.com/about-consultcambridge">About ConsultCambridge</a></h2><br>
-            <center><img src="https://sites.google.com/a/consultcambridge.com/images/home/AboutCC%20Jigsaw%20HomePage%20Icon%20155x96.png" /></center>
-            <p><br>Working with our clients and their HR departments, ConsultCambridge provides innovative solutions to suit varying working practices and methodologies.</p>
-            <!-- Column four end -->
-          </div><br><br>
         </div>
       </div>
-  </div>
-  </div>
+      <center>
+        <div id="mybgcarousel" class="bgcarousel"></div>
+      </center>
+      <div class="whitebackgroundbottom">
+        <center>
+          <img src="images/WhiteBackGroundBottom.png" />
+        </center>
+        <div id="featuredcolumns">
+          <div id="container4">
+            <div id="container3">
+              <div id="container2">
+                <div id="container1">
+                  <div id="col1">
+<!-- Column one start -->
+                    <h2 align="center">
+                      <a href="research-insights-and-resources/books-and-journal-articles.html">Publications</a>
+                    </h2>
+                    <br />
+                    <center>
+                      <img src="images/Publications%20Icon%20HomePage%20155x96.png" />
+                    </center>
+                    <p><br />The director of ConsultCambridge has written and contributed to many books, articles and interviews. These highlight the extent of insight and vision ConsultCambridge brings to the industry.</p>
+<!-- Column one end -->
+                  </div>
+                  <div id="col2">
+<!-- Column two start -->
+                    <h2 align="center">
+                      <a href="research-insights-and-resources/audio.html">Latest Pod and Vodcasts</a>
+                    </h2>
+                    <br />
+                    <center>
+                      <img src="images/VodPodCast%20HomePage%20Icon%20155x96.png" />
+                    </center>
+                    <p><br />Keep up to date with our latest podcasts and vodcasts. Each one provides different insights into topical areas.</p>
+<!-- Column two end -->
+                  </div>
+                  <div id="col3">
+<!-- Column three start -->
+                    <h2 align="center">
+                      <a href="research-insights-and-resources/index.html">Our Expertise</a>
+                    </h2>
+                    <br />
+                    <center>
+                      <img src="images/HumanCapSolImage%20Icon%20155x95.png" />
+                    </center>
+                    <p><br />ConsultCambridge is actively engaged with academic research programmes in varying relevant fields which directly informs our expertise and related services to our clients.  </p>
+<!-- Column three end -->
+                  </div>
+                  <div id="col4">
+<!-- Column four start -->
+                    <h2 align="center">
+                      <a href="about-consultcambridge/index.html">About ConsultCambridge</a>
+                    </h2>
+                    <br />
+                    <center>
+                      <img src="images/AboutCC%20Jigsaw%20HomePage%20Icon%20155x96.png" />
+                    </center>
+                    <p><br />Working with our clients and their HR departments, ConsultCambridge provides innovative solutions to suit varying working practices and methodologies.</p>
+<!-- Column four end -->
+                  </div>
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright">
+          <p>Content &copy; 2012 Consult Cambridge. All Rights Reserved. Website designed and created by Comfy Web - <a href="http://www.comfyweb.net">www.comfyweb.net</a></p>
+        </div>
+      </div>
     </div>
-  <div id="copyright">
-		<p>Content &copy; 2012 Consult Cambridge. All Rights Reserved. Website designed and created by Comfy Web - <a href="http://www.comfyweb.net">www.comfyweb.net</a></p>
-	</div>
-  </div>
- </div>
-</body>
+  </body>
 </html>
-</Content>
-</Module>

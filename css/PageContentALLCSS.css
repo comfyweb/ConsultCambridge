@@ -1,0 +1,531 @@
+html
+{
+    
+}
+body
+{
+    background-size: 100% 628px;
+    background-position:center 3%;
+    background-repeat:no-repeat;
+    background-color:#A4A4A4;
+    height:2800px;
+}
+#whole-page
+{
+    min-width:1024px;
+    max-width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div
+{
+text-align:left;
+}
+
+.whitebackgroundtop
+{
+  
+}
+
+ a img {border: none; }
+
+#logo
+    {
+        z-index: 95;
+        position: relative;
+        margin-top: -10%;
+        margin-left: 4%;
+    }
+
+#logo a
+    {
+        z-index:95;
+    }
+#logo img
+{
+    width:38%;
+    min-width:296px;
+    max-width:479px;
+    margin-top: 0%;
+}
+.whitebackgroundtop
+{
+    position:relative;
+    margin-top:0%;
+    z-index: 90;
+}
+.whitebackgroundtop img
+{
+    width:1024px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#margin-limit
+    {
+	position:relative;
+    }
+#navigation-links ul
+    {
+        margin-left:780px;
+	width:240px;
+        padding;10px;
+        position: absolute;
+        margin-top: -45px;
+    }
+    
+#navigation-links ul li
+    {
+        display:inline;
+	float:left;
+	position:relative;
+	list-style:none;
+        margin-left:10px;
+	position:relative;
+        z-index:95;
+        padding-left: 10;
+    }
+    
+#navigation-links li a
+    {
+        color:#444444;
+	text-decoration:none;
+        font:bold 11px Arial;
+    }
+    
+#navigation-links li a:hover
+    {
+        color:#008080;
+    }
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/stylesheetHeydings.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="https://sites.google.com/a/consultcambridge.com/consultcambridge/stylesheetgandhisans.css" type="text/css" charset="utf-8" />
+
+.lt-ie9 .dropmenu {
+background:#2a2a2a;
+}
+.lt-ie9 .dropmenu > li {
+height: 24px;
+}
+
+.lt-ie8 .dropmenu li a  {
+text-indent:12px;
+line-height: 1.4;
+vertical-align:baseline;
+}
+.lt-ie8 .dropmenu li .full_drop {
+padding-left: 0;
+text-indent:7px;
+}
+
+/********************RESET5*****************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+#container {
+width: 980px;
+margin: 2em auto;
+}
+
+body {
+background: url(../img/back.jpg);
+font: 13px helvetica, arial;
+margin:0;
+padding: 0;
+}
+
+#topnav {
+z-index: 95;
+position: relative;
+float:right;
+margin-top: -5%;
+margin-right: 8%;
+}
+ul.dropmenu {
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+padding:0;
+background: url(https://sites.google.com/a/consultcambridge.com/images/home/IEFIXBackgroundImage.gif);
+}
+
+.dropmenu > li {
+position:relative;
+padding:4px 2px 12px 2px;
+display:block;
+float: left;
+margin-top:0%;
+-webkit-transition: all .35s ease-in-out;
+-moz-transition: all .35s ease-in-out;
+-o-transition: all .35s ease-in-out;
+height: 23px;
+}
+
+.dropmenu li a {
+text-decoration:none;
+font: bold 14px arial;
+color: #424242;
+display:inline-block;
+padding: 6px;
+text-indent: 0px;
+vertical-align: middle;
+text-shadow: 0 0 30px rgba(230, 230, 230, .46);
+border-radius: 2px;
+}
+
+.dropmenu li a:hover
+{
+color:#008080;
+border-radius: 3px 3px 2px 2px;
+box-shadow: 0 2px 2px #424242;
+}
+
+/**=====================DROP DOWN=======================**/
+/***Common for all drops****/
+.drop_common{
+background:#6E6E6E;
+box-shadow: 0 2px 1px rgba(4,4,4,.86), 2px 2px 2px  rgba(9,7,9,.3), inset -10px 0 50px rgba(18,17,19,.45);
+-webkit-transition: all .35s ease-in-out;
+-moz-transition: all .25s ease-in-out;
+-o-transition: all .35s ease-in-out;
+}
+.subdrop  {
+position:absolute;
+left:0;
+top: 48px;
+z-index: 99;
+float: left;
+margin-left:-180px;
+border-radius: 0 4px 4px 4px;
+visibility:hidden;	
+opacity:0;
+}
+.subdrop li {
+list-style:none;
+}
+.column_3 li { 
+border-bottom: 1px dashed rgba(105, 107, 108, .4);
+}
+.column_3 li:nth-child(7) + li {
+border-bottom:none;
+}
+.subdrop li a {
+text-indent:0;
+white-space: nowrap;
+font-size: 1em;
+padding:5px;
+display: block;
+color:#ffffff;
+}
+.subdrop li a:hover {
+color:#008080;
+}
+/**=============3 Column Subdrop===============**/
+.column_3 {width: 440;}
+.col_110 { width: 40%;
+float:left;
+margin: 8px 10px 8px 20px;
+}
+.col_110_head h3, .col_350_head h3   {
+white-space: nowrap;
+color:#f8f8f8;
+font-family: arial;
+}
+.col_110_head h3 {
+margin: 15px 0px 10px;
+font-size: 15px;
+font-weight: 600;
+}
+
+
+/**=====================Drop Column=================**/
+.dropmenu li .full_drop {
+text-indent: 0;
+}
+
+.drop_column {
+width: 130px;
+}
+.drop_col_menu {
+margin: 6px 0;
+}
+.drop_col_menu li a {
+font-size: 13px;
+padding: 6px 15px;
+letter-spacing: 1px;
+}
+.nested_drop {
+position:relative;
+}
+.nested_drop li a {
+padding: 8px 40px 8px 15px;
+}
+
+/**==================1 Column  Subdrop=================**/
+.column_1 {width: 350px;}
+.col_350 {
+margin: 35px 10px 15px 0;
+}
+.col_350_head h3 {
+margin: -15px 95px 5px;
+font-size: 14px;
+color:#ffffff;
+}
+.col_350_head h3 a
+{
+color:#ffffff;
+}
+.col_350 p {
+margin-left: 95px;
+color: #ffffff;
+font:  13px/1.6  arial;
+}
+.col_350 p a {
+text-indent:3px;
+padding:0 15px;
+float:right;
+font-size: 13px;
+color:#ffffff;
+}
+.col_350  img {
+float: left;
+width: 72px;
+height: 68px;
+min-width:72px;
+max-width:68px;
+border: 4px solid #ddd; /**fallback**/
+border: 4px solid rgba(220, 220, 220, .3);
+margin-top: -20px;
+box-shadow: 0 0 1px 2px rgba(210, 210, 210, .3);
+margin-left: 8px
+}
+
+
+/**===Drop/Sub Drop Down Appear on Hover===**/
+.dropmenu li
+{
+color:#ffffff;
+}
+.dropmenu li:hover .subdrop {
+visibility: visible;
+top: 37px;
+opacity: 1;
+width:370px;
+}
+.nested_drop:hover > .nested_right_drop, .nested_sub_drop:hover > .nested_right_sub_drop {
+visibility: visible;
+opacity:1;
+z-index:98;
+}
+
+.whitebackgroundbottom
+    {
+        position: relative;
+        margin-top: 13%;
+    }
+.whitebackgroundbottom img
+{
+   width:1024px;
+}
+h1
+{
+    font: bold 16px arial;
+    color:#008080;
+}
+#main-content
+    {
+	background-size: 100%;
+	background-position:center 3%;
+	background-repeat:no-repeat;
+	font: 14px Arial;
+        position:relative;
+	padding:30px;
+    }
+#main-content h1
+    {
+	color: #008080;
+    }
+#SImain-content
+    {
+        font: 14px Arial;
+        position:relative;
+	padding:30px;
+    }
+#CSmain-content
+    {
+	margin-top: -2799px;
+        width:990px;
+        margin-left:30px;
+        font-size: 14px;
+    }
+/*List for Four Bottom Columns*/
+/* <!-- */
+/* KRB body {
+	margin:0;
+	padding:0; */
+}
+#header h1,
+#header h2,
+#header p {
+	margin-left:2%;
+	padding-right:2%;
+}
+#active2 #tab2,
+#active3 #tab3,
+#active4 #tab4,
+#active5 #tab5 {
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+}
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#footer p {
+	margin-left:2%;
+	padding-right:2%;
+}
+
+
+/* Start of Column CSS */
+#featuredcolumns
+{
+	position: relative;
+	margin-top: 30px;
+}
+#featuredcolumns img
+{
+	align: center;
+}
+#featuredcolumns h2
+{
+	font-size:14px;
+	align: center;
+}
+#container4 {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+	position: relative;
+	
+}
+#container3 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:25%;
+}
+#container2 {
+	clear:left;
+	float:left;
+	width:100%;
+	position:relative;
+	right:25%;
+}
+#container1 {
+	float:left;
+	width:100%;
+	position:relative;
+	right:25%;
+	margin-left: 200px;
+}
+#col1 {
+	float:left;
+	width:175px;
+	position:relative;
+	left:77%;
+	overflow:hidden;
+}
+#col1 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#col1 a:hover
+{
+	color:#008080;
+}
+#col2 {
+	float:left;
+	width:175px;
+	position:relative;
+	left:81%;
+	overflow:hidden;
+}
+#col2 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#col2 a:hover
+{
+	color:#008080;
+}
+#col3 {
+	float:left;
+	width:175px;
+	position:relative;
+	left:85%;
+	overflow:hidden;
+}
+#col3 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#col3 a:hover
+{
+	color:#008080;
+}
+#col4 {
+	float:left;
+	width:175px;
+	position:relative;
+	left:89%;
+	overflow:hidden;
+}
+#col4 a
+{
+	text-decoration: underline;
+	color:#444444;
+}
+#col4 a:hover
+{
+	color:#008080;
+}
+/* --> */
+#copyright
+{
+position:relative;
+z-index:98;
+text-align:center;
+font-size:10px;
+font-color:#424242;
+font-family: arial, sans-serif;
+}

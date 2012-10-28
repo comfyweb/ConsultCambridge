@@ -1,0 +1,85 @@
+	/* Start of Column CSS */
+#SIcontainer2 {
+	clear:left;
+	float:left;
+	width:150%;
+	overflow:hidden;
+}
+#SIcontainer1 {
+	float:left;
+	width:93%;
+	position:relative;
+	right:50%;
+}
+#SIcol1 {
+	float:left;
+	width:45%;
+	position:relative;
+	left:54%;
+	overflow:hidden;
+}
+#SIcol1 h1 {
+	color:#008080;
+}
+#SIcol1 h2 {
+	color:#008080;
+}
+#SIcol1 h3 {
+	color:#424242;
+	font-size:12px;
+}
+#SIcol1 img {
+	padding-right:10px;
+	padding-left:10px;
+}
+#SIcol1 a {
+	color:#0000FF;
+	font-weight:normal;
+}
+#SIcol2 {
+	float:left;
+	width:21%;
+	position:relative;
+	left:55%;
+	overflow:hidden;
+}
+#SIcol2 h1 {
+	color:#008080;
+}
+#SIcol2 h2 {
+	color:#008080;
+}
+#SIcol2 img {
+	padding-right:10px;
+}
+#SIcol2 a {
+	color:#0000FF;
+}
+/* --> */
+#consulting-services h1 {
+        color:#008080;
+        font-size: 16px;
+        font-weight:bold;
+}
+#parahead {
+        color:#008080;
+        font-size: 16px;
+        font-weight:bold;
+}
+#consulting-services img {
+        width:60%;
+}
+#selected-insights p {
+	color:#424242;
+	font-size:11px;
+}
+#selected-insights h3 {
+	font-size:12px;
+}
+#selected-insights h4 {
+	color:#424242;
+	font-size:11px;
+}
+#link {
+        font-size:9px;
+}
